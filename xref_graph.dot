@@ -1,0 +1,12 @@
+digraph "xref graph" {
+  "lib/mod0.ex"
+  "lib/mod0.ex" -> "lib/mod1.ex"
+  "lib/mod1.ex" -> "lib/mod2.ex"
+  "lib/mod2.ex" -> "lib/mod3.ex"
+  "lib/mod3.ex" -> "lib/mod0.ex" [label="(compile)"]
+  "lib/mod2.ex" -> "lib/mod4.ex"
+  "lib/mod1.ex"
+  "lib/mod2.ex"
+  "lib/mod3.ex"
+  "lib/mod4.ex"
+}
